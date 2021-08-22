@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5555df2f-97a7-4254-b631-f35dc2e94030}</ProjectGuid>
+    <RootNamespace>刷题新</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="134. 加油站.cpp" />
+    <ClCompile Include="32. 最长有效括号.cpp" />
+    <ClCompile Include="cppfiles\01背包问题.cpp" />
+    <ClCompile Include="cppfiles\1027最长等差数列.cpp" />
+    <ClCompile Include="cppfiles\103. 二叉树的锯齿形层序遍历.cpp" />
+    <ClCompile Include="cppfiles\105从前序和中序遍历构造二叉树.cpp" />
+    <ClCompile Include="cppfiles\106从中序和后序遍历序列构造二叉树.cpp" />
+    <ClCompile Include="cppfiles\10正则表达式匹配.cpp" />
+    <ClCompile Include="cppfiles\110. 平衡二叉树.cpp" />
+    <ClCompile Include="cppfiles\111二叉树的最小深度.cpp" />
+    <ClCompile Include="cppfiles\112路径总和.cpp" />
+    <ClCompile Include="cppfiles\113路径总和2.cpp" />
+    <ClCompile Include="cppfiles\1143最长公共子序列.cpp" />
+    <ClCompile Include="cppfiles\114二叉树转链表.cpp" />
+    <ClCompile Include="cppfiles\1154一年中的第几天.cpp" />
+    <ClCompile Include="cppfiles\118-119杨辉三角1-2.cpp" />
+    <ClCompile Include="cppfiles\11盛最多水的容器.cpp" />
+    <ClCompile Include="cppfiles\1201丑树3.cpp" />
+    <ClCompile Include="cppfiles\120三角形最小路径和.cpp" />
+    <ClCompile Include="cppfiles\121买卖股票的最佳时机.cpp" />
+    <ClCompile Include="cppfiles\1221分割平衡字符串.cpp" />
+    <ClCompile Include="cppfiles\122买卖股票的最佳时机2.cpp" />
+    <ClCompile Include="cppfiles\1248统计优美子数组的个数.cpp" />
+    <ClCompile Include="cppfiles\124二叉树的最大路径和.cpp" />
+    <ClCompile Include="cppfiles\125验证回文串.cpp" />
+    <ClCompile Include="cppfiles\1262可以被k整除的最大和.cpp" />
+    <ClCompile Include="cppfiles\126单词接龙2.cpp" />
+    <ClCompile Include="cppfiles\1277统计全为1的正方形子矩阵.cpp" />
+    <ClCompile Include="cppfiles\127单词接龙.cpp" />
+    <ClCompile Include="cppfiles\128. 最长连续序列.cpp" />
+    <ClCompile Include="cppfiles\129. 求根节点到叶节点数字之和.cpp" />
+    <ClCompile Include="cppfiles\1290 二进制链表转整数.cpp" />
+    <ClCompile Include="cppfiles\1295统计位数为偶数的数字.cpp" />
+    <ClCompile Include="cppfiles\1313解压缩编码列表.cpp" />
+    <ClCompile Include="cppfiles\131分割回文串.cpp" />
+    <ClCompile Include="cppfiles\133克隆图.cpp" />
+    <ClCompile Include="cppfiles\135分发糖果.cpp" />
+    <ClCompile Include="cppfiles\137只出现一次的数字2.cpp" />
+    <ClCompile Include="cppfiles\1389按照既定顺序创建数组.cpp" />
+    <ClCompile Include="cppfiles\138复制带随机指针的链表.cpp" />
+    <ClCompile Include="cppfiles\139. 单词拆分.cpp" />
+    <ClCompile Include="cppfiles\14.最长公共前缀.cpp" />
+    <ClCompile Include="cppfiles\1401只出现一次的数字.cpp" />
+    <ClCompile Include="cppfiles\141环形链表.cpp" />
+    <ClCompile Include="cppfiles\142环形链表2.cpp" />
+    <ClCompile Include="cppfiles\1431拥有最多糖果的孩子.cpp" />
+    <ClCompile Include="cppfiles\143重排链表.cpp" />
+    <ClCompile Include="cppfiles\144二叉树前序遍历.cpp" />
+    <ClCompile Include="cppfiles\1450在既定时间做作业的学生人数.cpp" />
+    <ClCompile Include="cppfiles\146LRU缓存机制cpp.cpp" />
+    <ClCompile Include="cppfiles\1470重拍数组.cpp" />
+    <ClCompile Include="cppfiles\147对链表进行插入排序.cpp" />
+    <ClCompile Include="cppfiles\148排序链表.cpp" />
+    <ClCompile Include="cppfiles\150逆波兰表达式求值.cpp" />
+    <ClCompile Include="cppfiles\151. 翻转字符串里的单词.cpp" />
+    <ClCompile Include="cppfiles\1528重新排列字符串.cpp" />
+    <ClCompile Include="cppfiles\152乘积最大子数组.cpp" />
+    <ClCompile Include="cppfiles\153.寻找旋转排序数组中的最小值.cpp" />
+    <ClCompile Include="cppfiles\154寻找旋转排序数组中的最小值2.cpp" />
+    <ClCompile Include="cppfiles\15三数之和.cpp" />
+    <ClCompile Include="cppfiles\160相交链表.cpp" />
+    <ClCompile Include="cppfiles\162寻找峰值.cpp" />
+    <ClCompile Include="cppfiles\165比较版本号.cpp" />
+    <ClCompile Include="cppfiles\1669合并两个链表.cpp" />
+    <ClCompile Include="cppfiles\168. Excel表列名称.cpp" />
+    <ClCompile Include="cppfiles\16最接近的三数之和.cpp" />
+    <ClCompile Include="cppfiles\171. Excel表列序号.cpp" />
+    <ClCompile Include="cppfiles\174地下城游戏.cpp" />
+    <ClCompile Include="cppfiles\179排成最大数.cpp" />
+    <ClCompile Include="cppfiles\187重复的DNA序列.cpp" />
+    <ClCompile Include="cppfiles\198打家劫舍.cpp" />
+    <ClCompile Include="cppfiles\1两数之和.cpp" />
+    <ClCompile Include="cppfiles\2.两数相加.cpp" />
+    <ClCompile Include="cppfiles\200岛屿数量.cpp" />
+    <ClCompile Include="cppfiles\202快乐数.cpp" />
+    <ClCompile Include="cppfiles\205同构字符串.cpp" />
+    <ClCompile Include="cppfiles\207课程安排.cpp" />
+    <ClCompile Include="cppfiles\209. 长度最小的子数组.cpp" />
+    <ClCompile Include="cppfiles\210课程表2.cpp" />
+    <ClCompile Include="cppfiles\211添加与搜索单词.cpp" />
+    <ClCompile Include="cppfiles\213打家劫舍2.cpp" />
+    <ClCompile Include="cppfiles\215数组中的第K个最大元素.cpp" />
+    <ClCompile Include="cppfiles\219存在重复元素2.cpp" />
+    <ClCompile Include="cppfiles\21合并有序链表.cpp" />
+    <ClCompile Include="cppfiles\220存在重复元素3.cpp" />
+    <ClCompile Include="cppfiles\221最大面积.cpp" />
+    <ClCompile Include="cppfiles\224基本计算器.cpp" />
+    <ClCompile Include="cppfiles\22括号生成.cpp" />
+    <ClCompile Include="cppfiles\232用栈实现队列.cpp" />
+    <ClCompile Include="cppfiles\234回文链表.cpp" />
+    <ClCompile Include="cppfiles\236二叉树的最近公共祖先.cpp" />
+    <ClCompile Include="cppfiles\237删除链表的结点.cpp" />
+    <ClCompile Include="cppfiles\239滑动窗口最大值.cpp" />
+    <ClCompile Include="cppfiles\23合并k个升序链表.cpp" />
+    <ClCompile Include="cppfiles\240搜索二维矩阵2.cpp" />
+    <ClCompile Include="cppfiles\242有效的异位词.cpp" />
+    <ClCompile Include="cppfiles\255. 验证前序遍历序列二叉搜索树.cpp" />
+    <ClCompile Include="cppfiles\25k个一组反转链表.cpp" />
+    <ClCompile Include="cppfiles\264丑数2.cpp" />
+    <ClCompile Include="cppfiles\27. 移除元素.cpp" />
+    <ClCompile Include="cppfiles\279完全平方数.cpp" />
+    <ClCompile Include="cppfiles\27移除元素.cpp" />
+    <ClCompile Include="cppfiles\287寻找重复数.cpp" />
+    <ClCompile Include="cppfiles\290单词规律.cpp" />
+    <ClCompile Include="cppfiles\297树的序列化和反序列化.cpp" />
+    <ClCompile Include="cppfiles\300最长递增子序列.cpp" />
+    <ClCompile Include="cppfiles\307区域和检索.cpp" />
+    <ClCompile Include="cppfiles\315计算右侧小于当前元素的个数.cpp" />
+    <ClCompile Include="cppfiles\31下一个排列.cpp" />
+    <ClCompile Include="cppfiles\322零钱兑换.cpp" />
+    <ClCompile Include="cppfiles\325和等于 k 的最长子数组长度.cpp" />
+    <ClCompile Include="cppfiles\331验证二叉树的前序序列化.cpp" />
+    <ClCompile Include="cppfiles\337. 打家劫舍 III.cpp" />
+    <ClCompile Include="cppfiles\338比特位计数.cpp" />
+    <ClCompile Include="cppfiles\33旋转无重复排序数组搜索目标值.cpp" />
+    <ClCompile Include="cppfiles\343整数拆分.cpp" />
+    <ClCompile Include="cppfiles\344翻转字符串.cpp" />
+    <ClCompile Include="cppfiles\345反转字符串的元音字母.cpp" />
+    <ClCompile Include="cppfiles\347前K个高频元素.cpp" />
+    <ClCompile Include="cppfiles\349两个数组的交集.cpp" />
+    <ClCompile Include="cppfiles\350两个数组的交集2.cpp" />
+    <ClCompile Include="cppfiles\354俄罗斯套娃信封问题.cpp" />
+    <ClCompile Include="cppfiles\35搜索插入位置.cpp" />
+    <ClCompile Include="cppfiles\36有效的数独.cpp" />
+    <ClCompile Include="cppfiles\376摆动序列.cpp" />
+    <ClCompile Include="cppfiles\387字符串里的第一个唯一字符.cpp" />
+    <ClCompile Include="cppfiles\392判断子序列.cpp" />
+    <ClCompile Include="cppfiles\394字符串解码.cpp" />
+    <ClCompile Include="cppfiles\39组合总和.cpp" />
+    <ClCompile Include="cppfiles\3无重复字符的最长子串.cpp" />
+    <ClCompile Include="cppfiles\400第N位数字.cpp" />
+    <ClCompile Include="cppfiles\402移除K个数字.cpp" />
+    <ClCompile Include="cppfiles\405. 数字转换为十六进制数.cpp" />
+    <ClCompile Include="cppfiles\407接雨水2.cpp" />
+    <ClCompile Include="cppfiles\409最长回文串.cpp" />
+    <ClCompile Include="cppfiles\40组合总和2.cpp" />
+    <ClCompile Include="cppfiles\41. 缺失的第一个正数.cpp" />
+    <ClCompile Include="cppfiles\413等差数列划分.cpp" />
+    <ClCompile Include="cppfiles\415. 字符串相加.cpp" />
+    <ClCompile Include="cppfiles\416分割等和子集.cpp" />
+    <ClCompile Include="cppfiles\42. 接雨水.cpp" />
+    <ClCompile Include="cppfiles\429N叉树的层序遍历.cpp" />
+    <ClCompile Include="cppfiles\435无重叠空间.cpp" />
+    <ClCompile Include="cppfiles\437路径总和3.cpp" />
+    <ClCompile Include="cppfiles\442数组中重复的元素.cpp" />
+    <ClCompile Include="cppfiles\443. 压缩字符串.cpp" />
+    <ClCompile Include="cppfiles\445两数相加2.cpp" />
+    <ClCompile Include="cppfiles\446数组中重复的元素.cpp" />
+    <ClCompile Include="cppfiles\449序列化和反序列化二叉查找树.cpp" />
+    <ClCompile Include="cppfiles\450删除二叉搜索树的节点.cpp" />
+    <ClCompile Include="cppfiles\452用最少数量的剑射爆气球.cpp" />
+    <ClCompile Include="cppfiles\455分发饼干.cpp" />
+    <ClCompile Include="cppfiles\45跳跃游戏2.cpp" />
+    <ClCompile Include="cppfiles\460. LFU 缓存.cpp" />
+    <ClCompile Include="cppfiles\468验证ip地址.cpp" />
+    <ClCompile Include="cppfiles\46全排列.cpp" />
+    <ClCompile Include="cppfiles\470rand7生成rand10.cpp" />
+    <ClCompile Include="cppfiles\473摆火柴.cpp" />
+    <ClCompile Include="cppfiles\47全排列2.cpp" />
+    <ClCompile Include="cppfiles\485. 最大连续1的个数.cpp" />
+    <ClCompile Include="cppfiles\486预测赢家.cpp" />
+    <ClCompile Include="cppfiles\48旋转图像.cpp" />
+    <ClCompile Include="cppfiles\494. 目标和.cpp" />
+    <ClCompile Include="cppfiles\496. 下一个更大元素 I.cpp" />
+    <ClCompile Include="cppfiles\498对角线遍历.cpp" />
+    <ClCompile Include="cppfiles\49字母异位词分组.cpp" />
+    <ClCompile Include="cppfiles\4寻找两个正序数组的中位数.cpp" />
+    <ClCompile Include="cppfiles\503. 下一个更大元素 II.cpp" />
+    <ClCompile Include="cppfiles\50Pow.cpp" />
+    <ClCompile Include="cppfiles\516最长回文子序列.cpp" />
+    <ClCompile Include="cppfiles\518. 零钱兑换 II.cpp" />
+    <ClCompile Include="cppfiles\51N皇后.cpp" />
+    <ClCompile Include="cppfiles\523连续的子数组和.cpp" />
+    <ClCompile Include="cppfiles\525. 连续数组.cpp" />
+    <ClCompile Include="cppfiles\528. 按权重随机选择.cpp" />
+    <ClCompile Include="cppfiles\530. 二叉搜索树的最小绝对差.cpp" />
+    <ClCompile Include="cppfiles\535tinyURL.cpp" />
+    <ClCompile Include="cppfiles\53最大子序和.cpp" />
+    <ClCompile Include="cppfiles\542零一矩阵.cpp" />
+    <ClCompile Include="cppfiles\543二叉树的直径.cpp" />
+    <ClCompile Include="cppfiles\547省份数量.cpp" />
+    <ClCompile Include="cppfiles\54顺时针打印矩阵.cpp" />
+    <ClCompile Include="cppfiles\556. 下一个更大元素 III.cpp" />
+    <ClCompile Include="cppfiles\557反转字符串中的单词 III.cpp" />
+    <ClCompile Include="cppfiles\559N叉树的最大深度.cpp" />
+    <ClCompile Include="cppfiles\55跳跃游戏.cpp" />
+    <ClCompile Include="cppfiles\560和为k的子数组.cpp" />
+    <ClCompile Include="cppfiles\561. 数组拆分 I.cpp" />
+    <ClCompile Include="cppfiles\56合并区间.cpp" />
+    <ClCompile Include="cppfiles\572另一个树的子树.cpp" />
+    <ClCompile Include="cppfiles\57插入区间.cpp" />
+    <ClCompile Include="cppfiles\589N叉树的前序遍历.cpp" />
+    <ClCompile Include="cppfiles\599.两个列表的最小索引总和.cpp" />
+    <ClCompile Include="cppfiles\5最长回文子串.cpp" />
+    <ClCompile Include="cppfiles\6. Z 字形变换.cpp" />
+    <ClCompile Include="cppfiles\605种花问题.cpp" />
+    <ClCompile Include="cppfiles\61. 旋转链表.cpp" />
+    <ClCompile Include="cppfiles\611有效三角形的个数.cpp" />
+    <ClCompile Include="cppfiles\617合并二叉树.cpp" />
+    <ClCompile Include="cppfiles\622设计循环队列.cpp" />
+    <ClCompile Include="cppfiles\62不同路径.cpp" />
+    <ClCompile Include="cppfiles\63不同路径2.cpp" />
+    <ClCompile Include="cppfiles\643子数组最大平均数.cpp" />
+    <ClCompile Include="cppfiles\64最小路径和.cpp" />
+    <ClCompile Include="cppfiles\662. 二叉树最大宽度.cpp" />
+    <ClCompile Include="cppfiles\670. 最大交换.cpp" />
+    <ClCompile Include="cppfiles\673最长递增子序列的个数.cpp" />
+    <ClCompile Include="cppfiles\67二进制求和.cpp" />
+    <ClCompile Include="cppfiles\692前K个高频单词.cpp" />
+    <ClCompile Include="cppfiles\695岛屿的最大面积.cpp" />
+    <ClCompile Include="cppfiles\69求平方根.cpp" />
+    <ClCompile Include="cppfiles\704二分查找.cpp" />
+    <ClCompile Include="cppfiles\707设计链表.cpp" />
+    <ClCompile Include="cppfiles\707设计链表双链表.cpp" />
+    <ClCompile Include="cppfiles\707设计链表复习出错.cpp" />
+    <ClCompile Include="cppfiles\707设计链表头结点保存信息.cpp" />
+    <ClCompile Include="cppfiles\70爬楼梯.cpp" />
+    <ClCompile Include="cppfiles\70爬楼梯问题.cpp" />
+    <ClCompile Include="cppfiles\713乘积小于k的子数组.cpp" />
+    <ClCompile Include="cppfiles\718最长重复子数组.cpp" />
+    <ClCompile Include="cppfiles\72. 编辑距离.cpp" />
+    <ClCompile Include="cppfiles\724寻找数组的中心索引.cpp" />
+    <ClCompile Include="cppfiles\739. 每日温度.cpp" />
+    <ClCompile Include="cppfiles\746使用最小花费爬楼梯.cpp" />
+    <ClCompile Include="cppfiles\75.颜色分类.cpp" />
+    <ClCompile Include="cppfiles\76最小覆盖子串.cpp" />
+    <ClCompile Include="cppfiles\77组合.cpp" />
+    <ClCompile Include="cppfiles\78子集.cpp" />
+    <ClCompile Include="cppfiles\796旋转字符串.cpp" />
+    <ClCompile Include="cppfiles\79单词搜索.cpp" />
+    <ClCompile Include="cppfiles\80删除排序数组中的重复项2.cpp" />
+    <ClCompile Include="cppfiles\81搜索旋转排序数组2.cpp" />
+    <ClCompile Include="cppfiles\82删除排序链表的重复数字2.cpp" />
+    <ClCompile Include="cppfiles\83删除排序链表中的重复元素.cpp" />
+    <ClCompile Include="cppfiles\86链表划分.cpp" />
+    <ClCompile Include="cppfiles\871最小加油次数.cpp" />
+    <ClCompile Include="cppfiles\887. 鸡蛋掉落.cpp" />
+    <ClCompile Include="cppfiles\889从前序遍历和后序遍历构造二叉树.cpp" />
+    <ClCompile Include="cppfiles\89格雷编码.cpp" />
+    <ClCompile Include="cppfiles\8字符串转整数.cpp" />
+    <ClCompile Include="cppfiles\90子集2.cpp" />
+    <ClCompile Include="cppfiles\912排序数组.cpp" />
+    <ClCompile Include="cppfiles\918环形数组的最大和.cpp" />
+    <ClCompile Include="cppfiles\919完全二叉树插入器.cpp" />
+    <ClCompile Include="cppfiles\91解码方法.cpp" />
+    <ClCompile Include="cppfiles\92反转链表2.cpp" />
+    <ClCompile Include="cppfiles\93复原ip地址.cpp" />
+    <ClCompile Include="cppfiles\958二叉树的完全性检验.cpp" />
+    <ClCompile Include="cppfiles\95不同的二叉搜索树2.cpp" />
+    <ClCompile Include="cppfiles\965单值二叉树.cpp" />
+    <ClCompile Include="cppfiles\96不同的二叉搜索树.cpp" />
+    <ClCompile Include="cppfiles\973最接近原点的K个点.cpp" />
+    <ClCompile Include="cppfiles\974和可被K整除的子数组.cpp" />
+    <ClCompile Include="cppfiles\97交错字符串.cpp" />
+    <ClCompile Include="cppfiles\981. 基于时间的键值存储.cpp" />
+    <ClCompile Include="cppfiles\98验证二叉搜索树.cpp" />
+    <ClCompile Include="cppfiles\991坏了的计算器.cpp" />
+    <ClCompile Include="cppfiles\99恢复二叉搜索树.cpp" />
+    <ClCompile Include="cppfiles\kmp和其扩展.cpp" />
+    <ClCompile Include="cppfiles\leecode160剑指offer52两个链表的公共节点.cpp" />
+    <ClCompile Include="cppfiles\leecode19.cpp" />
+    <ClCompile Include="cppfiles\leetcode1290二进制链表转整数.cpp" />
+    <ClCompile Include="cppfiles\lincode1187二叉树左下角的节点.cpp" />
+    <ClCompile Include="cppfiles\p3桶排序.cpp" />
+    <ClCompile Include="cppfiles\Sourc1e.cpp" />
+    <ClCompile Include="cppfiles\Source.cpp" />
+    <ClCompile Include="cppfiles\Source2.cpp" />
+    <ClCompile Include="cppfiles\test3.cpp" />
+    <ClCompile Include="cppfiles\中文数字转整数.cpp" />
+    <ClCompile Include="cppfiles\二叉树跟节点到某一路径.cpp" />
+    <ClCompile Include="cppfiles\亚马逊删除循环链表中的结点.cpp" />
+    <ClCompile Include="cppfiles\位操作技巧.cpp" />
+    <ClCompile Include="cppfiles\剑指 Offer 21.调整数组顺序使奇数位于偶数前面.cpp" />
+    <ClCompile Include="cppfiles\剑指offer05替换空格.cpp" />
+    <ClCompile Include="cppfiles\剑指offer13机器人的运动范围.cpp" />
+    <ClCompile Include="cppfiles\剑指offer18删除链表的结点.cpp" />
+    <ClCompile Include="cppfiles\剑指offer20.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER20表示数值的字符串.cpp" />
+    <ClCompile Include="cppfiles\剑指offer24反转链表.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER26树的子结构.cpp" />
+    <ClCompile Include="cppfiles\剑指offer27二叉树的镜像.cpp" />
+    <ClCompile Include="cppfiles\剑指offer28对称的二叉树.cpp" />
+    <ClCompile Include="cppfiles\剑指offer32之字打印二叉树.cpp" />
+    <ClCompile Include="cppfiles\剑指offer33二叉搜索树的后序遍历序列.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER36二叉搜索树与双向链表.cpp" />
+    <ClCompile Include="cppfiles\剑指offer38字符串的排列.cpp" />
+    <ClCompile Include="cppfiles\剑指offer40最小的k个数.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER41_1出现的次数.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER46把数字翻译成字符串.cpp" />
+    <ClCompile Include="cppfiles\剑指offer4二维数组的查找.cpp" />
+    <ClCompile Include="cppfiles\剑指offer50第一个只出现一次的字符.cpp" />
+    <ClCompile Include="cppfiles\剑指offer51数组中的逆序对.cpp" />
+    <ClCompile Include="cppfiles\剑指offer54二叉搜索树的第k大节点.cpp" />
+    <ClCompile Include="cppfiles\剑指offer56数组中数字出现次数2.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER60N个骰子的点数.cpp" />
+    <ClCompile Include="cppfiles\剑指offer62.cpp" />
+    <ClCompile Include="cppfiles\剑指OFFER62圆圈中最后剩下的数字.cpp" />
+    <ClCompile Include="cppfiles\剑指offer66构建乘积数组.cpp" />
+    <ClCompile Include="cppfiles\剑指offer67把字符串转换成整数.cpp" />
+    <ClCompile Include="cppfiles\华为2计算某字母出现的次数.cpp" />
+    <ClCompile Include="cppfiles\华为3明明的随机数.cpp" />
+    <ClCompile Include="cppfiles\单循环链表测试.cpp" />
+    <ClCompile Include="cppfiles\可能的出栈序列.cpp" />
+    <ClCompile Include="cppfiles\回溯法基础.cpp" />
+    <ClCompile Include="cppfiles\微软3.cpp" />
+    <ClCompile Include="cppfiles\微软笔试2.cpp" />
+    <ClCompile Include="cppfiles\快乐数.cpp" />
+    <ClCompile Include="cppfiles\测试单循环链表.cpp" />
+    <ClCompile Include="cppfiles\牛客网从第一个字符串删除第二个字符串的所有字符.cpp" />
+    <ClCompile Include="cppfiles\牛客网输入输出练习.cpp" />
+    <ClCompile Include="cppfiles\面试01.01判定字符是否唯一.cpp" />
+    <ClCompile Include="cppfiles\面试题 01.08. 零矩阵.cpp" />
+    <ClCompile Include="cppfiles\面试题 17.10. 主要元素.cpp" />
+    <ClCompile Include="cppfiles\面试题0802迷路的机器人.cpp" />
+    <ClCompile Include="cppfiles\面试题0805递归乘法.cpp" />
+    <ClCompile Include="大数平方.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Clist.h" />
+    <ClInclude Include="Headers\LinkListClass.h" />
+    <ClInclude Include="Headers\wjxHeaders.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
