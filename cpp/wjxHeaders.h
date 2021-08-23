@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -19,6 +18,7 @@
 #include <bitset>
 #include <sstream>
 #include <array>
+#include <cstring>
 
 
 
