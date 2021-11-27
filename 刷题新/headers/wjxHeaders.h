@@ -19,8 +19,8 @@
 #include <bitset>
 #include <sstream>
 #include <array>
-
-
+#include <cstring>
+#include <cmath>
 
 using namespace std;
 
@@ -163,6 +163,8 @@ void levelOrder(TreeNode* root) {//分层遍历,利用vector存储节点
 }
 void levelOrder2(TreeNode* root) {//利用队列实现
 
+	if (!root)
+		return;
 	queue<TreeNode*> current, next;
 
 	current.push(root);
